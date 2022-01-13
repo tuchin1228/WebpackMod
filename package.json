@@ -1,0 +1,45 @@
+{
+  "name": "webpack_mod",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_ENV=development webpack --mode development",
+    "watch": "cross-env NODE_ENV=development webpack --mode development --watch",
+    "dev": "cross-env NODE_ENV=development  webpack serve --mode development --open",
+    "deploy": "cross-env NODE_ENV=production webpack --mode production"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.15",
+    "@babel/plugin-transform-runtime": "^7.13.15",
+    "@babel/preset-env": "^7.13.15",
+    "autoprefixer": "^10.2.5",
+    "babel-loader": "^8.2.2",
+    "copy-webpack-plugin": "^6.0.2",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.2.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.3.0",
+    "image-webpack-loader": "^7.0.1",
+    "mini-css-extract-plugin": "^1.4.1",
+    "node-sass": "^5.0.0",
+    "postcss-loader": "^4.0.0",
+    "sass": "^1.32.8",
+    "sass-loader": "^10.1.1",
+    "style-loader": "^2.0.0",
+    "styled-components": "^4.3.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "dotenv-webpack": "^7.0.2"
+  }
+}
